@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title></title>
-<link rel="stylesheet" type="text/css" href="css/main.css" />
-<script type="text/javascript" src="js/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style type="text/css">
+	.container{
+		margin-left: 75px;
+	}
+	.small-text{
+		/*font-size: .9em;*/
+	}
+	.page-header{
+		margin: 15px 0 10px;
+	}
+	.page-header h1,.page-header h2,.page-header h3,.page-header h4,.page-header h6{
+		margin-top: 0px;
+		margin-bottom: 5px;
+	}
+	.navget{
+		position: fixed;
+		background-color: #e5e5e5;
+		top: 1%;
+		border-radius: 4px;
+		left: 4px;
+		padding: 2px 4px;
+		color: #f56;
+		width: 22px;
+		min-height: 50px;
+		line-height: .8em;
+	}
+	.pull-righ:{
+		float: left;
+	}
+	@media  (min-width: 900px) {
+		.navget{
+		background-color: #e5e5e5;
+		left: 25px;
+		padding: 1px 4px;
+		width: 45px;
+		min-height: 22px;
+	 }
+	 .pull-righ:{
+		float: right;
+	}
+	}
+</style>
 </head>
 <body>
+<div class="hidden-print navget">
+				<a title="Back to home"  href="<?= base_url();?>"><span class="glyphicon glyphicon-home"></a>&nbsp;
+				<a title="Print this page" href="javascript:print();"><span class="glyphicon glyphicon-print"></a>
+			</div>
 <div class="container">
 	<div class="row">
-		<div class="col-md-12">
-			<div class="col-md-6">
+		<div class="col-md-10 col-sm-10 col-xs-10   col-md-offset-1  ">
+			
+			<div class="col-md-6 col-sm-6 col-xs-6">
 				<address>
 				  <strong>SARATH T.K</strong><br>
 				  Thrissur, Kerala ,IN<br/>
@@ -18,10 +64,10 @@
 				  <abbr title="Phone">Ph:</abbr> +91  94 95 504 504
 				</address>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 col-sm-6 col-xs-6 ">
 				<address class="pull-right">
 					Web:<a href="http://saratonite.aws.af.cm">http://saratonite.aws.af.cm</a><br>
-					Git:<a href="http://github.com">http://github.com/saratonite</a><br/>
+					Git:<a href="http://github.com/saratonite">http://github.com/saratonite</a><br/>
 				</address>
 			</div>
 			<div class="clearfix"></div>
@@ -33,24 +79,28 @@
 					<!--  -->
 					<section>
 						<div><h4>Relavent Courses Taken</div>
-						<div class="col-md-4">
-							<ul>
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<ul class="small-text">
 								<li>Data structures</li>
 								<li>Programming (c,c++,java)</li>
+								<li>Software engineering</li>
 								<li>Web programming</li>
 							</ul>
 						</div>
-						<div class="col-md-4">
-							<ul>
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<ul class="small-text">
+								<li>Visual programming</li>
 								<li>Computer based optimization technique</li>
-								<li>Computer network</li>
+								<li>Software testing</li>
+								<li>Computer networks</li>
 							</ul>
 							<br/>
 						</div>
-						<div class="col-md-4">
-							<ul>
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<ul class="small-text">
 								<li>Relational database management system</li>
-								<li>Visual programming(VB)</li>
+								<li>E-Commerce</li>
+								<li>Management Information system</li>
 							</ul>
 							<br/>
 						</div>
@@ -95,6 +145,11 @@
 					<li>Linux/*unix</li>
 					<li>Windows</li>
 				</ul>
+				<strong>Source code management</strong>
+				<ul class="list-inline">
+					<li>Git</li>
+					<li>Redmine</li>
+				</ul>
 			</section>
 			<section>
 				<div class="page-header"><h2>Projects</h2></div>
@@ -113,7 +168,7 @@
 			<section>
 				<div class="page-header"><h2>Other Interest</h2></div>
 				<ol>
-					<li> I love to play violin (Not well).</li>
+					<li> I love to play Violine (Not well).</li>
 				</ol>
 			</section>
 			
