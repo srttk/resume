@@ -1,7 +1,7 @@
 Sarath's Resume
 ======
 
-My Resume (2014) [View](http://saratonite.github.io)
+My Online Resume (2014) [View](http://saratonite.github.io/resume) [PDF] (http://github.com/saratonite/resume/master/resume.pdf)
 
                     (/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/)
 				   (/ 	 __                __   __ 				  /)
@@ -12,5 +12,7 @@ My Resume (2014) [View](http://saratonite.github.io)
 			  (/											 /)
 	    	 (/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/)
 	    	 
+
+The PDF File generated using Google Chrome.
 
 #### Thanks to [Github](http://github.com)
