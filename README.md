@@ -1,7 +1,7 @@
 Sarath's Resume
 ======
 
-My Resume (2014) [View](http://saratonite.github.io)
+My Resume (2014) [View](http://saratonite.github.io/resume)
 
                     (/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/)
 				   (/ 	 __                __   __ 				  /)
