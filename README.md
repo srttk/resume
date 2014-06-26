@@ -1,5 +1,5 @@
 Sarath's Resume
-======
+===============
 
 My Online Resume (2014) [View](http://saratonite.github.io/resume) [PDF] (http://github.com/saratonite/resume/master/resume.pdf)
 
