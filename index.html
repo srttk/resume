@@ -52,6 +52,37 @@
 		float: right;
 	}
 	}
+	/*For footer */
+	html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  /*max-width: 680px;*/
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
 </style>
 </head>
 <body>
@@ -70,9 +101,13 @@
 				  <abbr title="Phone">Ph:</abbr> +91  94 95 504 504<br/>
 				  Thrissur, Kerala, India.
 				</address>
+				<address class="visible-xs">
+					Web: <a href="http://saratonite.github.io">http://saratonite.github.io</a><br>
+					Github: <a href="http://github.com/saratonite">http://github.com/saratonite</a><br/>
+				</address>
 			</div>
 			<div class="col-md-6 col-sm-6 col-xs-6 ">
-				<address class="pull-right">
+				<address class="pull-right hidden-xs">
 					Web: <a href="http://saratonite.github.io">http://saratonite.github.io</a><br>
 					Github: <a href="http://github.com/saratonite">http://github.com/saratonite</a><br/>
 				</address>
@@ -186,5 +221,11 @@
 		</div>
 	</div>	
 </div>
+<!-- Footer section -->
+<div id="footer" class="hidden-print">
+      <div class="container">
+        <p class="text-muted">&copy;2013-2014 <a href="http://saratonite.github.io">Sarath.</a></p>
+      </div>
+    </div>
 </body>
 </html>
