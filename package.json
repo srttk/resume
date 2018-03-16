@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --public-url ./"
+    "build": "parcel build ./src/index.html --public-url ./",
+    "export": "node ./scripts/pdfexporter.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,8 @@
     "babel-preset-env": "^1.6.1",
     "node-sass": "^4.7.2",
     "parcel-bundler": "^1.6.2",
-    "postcss-modules": "^1.1.0"
+    "postcss-modules": "^1.1.0",
+    "puppeteer": "^1.1.1"
   },
   "dependencies": {
     "spectre.css": "^0.5.1"
