@@ -1,12 +1,17 @@
 const createPDF = require('./createPDF');
 
+const path = require('path');
+
+const distDir = path.resolve('.');
+
 const options = {
-    url: 'http://saratonite.github.io/resume/',
+    url: `file://${distDir}/dist/index.html`,
+    //url: 'http://saratonite.github.io/resume/',
     print: true,
     output: 'saraths-resume.pdf'
 
 }
 
 createPDF(options).then(function(data) {
-    console.log('YEP')
+    console.log('🔥🔥 📎 Pdf generated 👶 💥 📃 🔥🔥')
 })
