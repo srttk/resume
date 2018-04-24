@@ -60,3 +60,23 @@ footer {
     transform: rotate(180deg);
 }
 
+#back-to-home-btn{
+    position: fixed;
+    left: 10px;
+    width: 80px;
+}
+
+@media only screen and (max-width:1200px) {
+    #back-to-home-btn{
+        position: absolute;
+        top: 39px;
+        right: 0;
+        left: 85%;
+    }
+}
+@media print{ 
+
+    .noprint {
+        display: none;
+    }
+}
