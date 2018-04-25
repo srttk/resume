@@ -24,6 +24,7 @@ h1 {
 }
 
 h2 {
+    margin-top: 8px;
     font-size: 1.2em;
     strong {
         font-size: 0.7em;
@@ -71,7 +72,8 @@ footer {
         position: absolute;
         top: 39px;
         right: 0;
-        left: 85%;
+        left: 75%;
+        top:70px;
     }
 }
 @media print{ 
