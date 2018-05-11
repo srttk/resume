@@ -67,18 +67,18 @@ footer {
     width: 80px;
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width: 1025px) {
     #back-to-home-btn{
         position: absolute;
-        top: 39px;
-        right: 0;
-        left: 75%;
-        top:70px;
+        left: 90%;
+
     }
 }
-@media print{ 
 
-    .noprint {
-        display: none;
+@media only screen and (max-width:470px) {
+    #back-to-home-btn{
+        position: absolute;
+        left: 75%;
+        top:10px;
     }
 }

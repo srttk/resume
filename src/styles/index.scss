@@ -1,2 +1,7 @@
+@media print{ 
+.noprint {
+        display: none !important;
+    }
+}
 @import "../../node_modules/spectre.css/src/spectre";
 @import "./_boom"

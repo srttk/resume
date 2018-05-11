@@ -8,7 +8,7 @@ const options = {
     url: `file://${distDir}/dist/index.html`,
     //url: 'http://saratonite.github.io/resume/',
     print: true,
-    output: 'saraths-resume.pdf'
+    output: 'sarath-tk-resume.pdf'
 
 }
 
