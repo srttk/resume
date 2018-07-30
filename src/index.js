@@ -10,4 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentYearSpan = document.querySelector('#current-year');
     const now = new Date();
     currentYearSpan.textContent = now.getFullYear();
+
+    // Set back to home button
+
+    if(window.location && window.location.search.trim() === '?utm_source=sarath.tk') {
+
+        const gobackOrigin = document.querySelector('#go-back-origin')
+        gobackOrigin.href = 'https://sarath.tk';
+
+    }
 })
