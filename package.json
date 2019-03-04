@@ -8,7 +8,8 @@
     "dev": "parcel ./src/index.html --open",
     "build": "parcel build ./src/index.html --public-url ./",
     "export": "npm run build && node ./scripts/pdfexporter.js",
-    "publish": "npm run build && node ./scripts/publish-github-page.js"
+    "publish": "npm run build && node ./scripts/publish-github-page.js",
+    "linux:fix-watch-issue": "sudo sysctl fs.inotify.max_user_watches=524288"
   },
   "repository": {
     "type": "git",
