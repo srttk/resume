@@ -1,13 +1,14 @@
 {
   "name": "saratonite-resume",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Sarath's ⚡️ Resume 🔥",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel ./src/index.html --open",
-    "build": "parcel build ./src/index.html --public-url ./",
-    "export": "npm run build && node ./scripts/pdfexporter.js",
+    "dev": "next dev ./src",
+    "build": "next build ./src",
+    "export": "next export ./src",
+    "exportpdf": "npm run build && node ./scripts/pdfexporter.js",
     "publish": "npm run build && node ./scripts/publish-github-page.js",
     "linux:fix-watch-issue": "sudo sysctl fs.inotify.max_user_watches=524288"
   },
@@ -23,15 +24,12 @@
   },
   "homepage": "https://github.com/saratonite/resume#readme",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.6.1",
-    "gh-pages": "^1.1.0",
-    "node-sass": "^4.7.2",
-    "parcel-bundler": "^1.9.7",
-    "postcss-modules": "^1.1.0",
-    "puppeteer": "^1.1.1"
+    "babel-plugin-styled-components": "^1.10.0"
   },
   "dependencies": {
-    "spectre.css": "^0.5.1"
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0"
   }
 }
