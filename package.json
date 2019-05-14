@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next dev ./src",
+    "dev": "next ./src",
     "build": "next build ./src",
     "export": "next export ./src",
     "exportpdf": "npm run build && node ./scripts/pdfexporter.js",
