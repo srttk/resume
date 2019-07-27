@@ -1,6 +1,6 @@
 {
   "name": "saratonite-resume",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Sarath's ⚡️ Resume 🔥",
   "main": "index.js",
   "scripts": {
@@ -22,16 +22,15 @@
     "url": "https://github.com/saratonite/resume/issues"
   },
   "homepage": "https://github.com/saratonite/resume#readme",
+  "dependencies": {
+    "puppeteer": "^1.19.0",
+    "spectre.css": "^0.5.8"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.6.1",
-    "gh-pages": "^1.1.0",
-    "node-sass": "^4.7.2",
-    "parcel-bundler": "^1.9.7",
-    "postcss-modules": "^1.1.0",
-    "puppeteer": "^1.1.1"
-  },
-  "dependencies": {
-    "spectre.css": "^0.5.1"
+    "babel-preset-env": "^1.7.0",
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.12.0",
+    "parcel-bundler": "^1.12.3"
   }
 }
