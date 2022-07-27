@@ -1,29 +1,37 @@
 import React from "react";
+import Education from "./components/Education";
 import Experience from "./components/Experience";
+import Skils from "./components/Skils";
 
 export default function App() {
+  function switchDark() {
+    document.documentElement.classList.toggle("dark");
+  }
   return (
     <div
       style={{
         backgroundImage: "url('bg.svg')",
       }}
-      className=" relative bg-no-repeat bg-center bg-cover  overflow-x-hidden   bg-gradient-to-r from-indigo-900  to-purple-700 min-h-screen py-6 px-2 flex flex-col text-gray-700"
+      className=" relative bg-no-repeat bg-center bg-cover  overflow-x-hidden   bg-gradient-to-r from-indigo-900  to-purple-700 min-h-screen py-6 px-2 flex flex-col text-gray-700 dark:text-gray-300"
     >
-      <div className="w-full max-w-screen-lg bg-white mx-auto h-full  flex flex-col flex-grow rounded-lg shadow-sm  bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-70 border border-gray-100">
-        <header className="px-4 py-2  border-b">
+      <div className="w-full max-w-screen-lg bg-white dark:bg-slate-900 mx-auto h-full  flex flex-col flex-grow rounded-lg shadow-sm  bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-75 dark:bg-opacity-80 border border-gray-100">
+        <header className="px-4 py-2  border-b relative">
           <h1 className="text-2xl font-bold uppercase ">Sarath TK</h1>
           <div className="flex space-x-4">
             <p className=" font-semibold">Fullstack Developer</p>
           </div>
 
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-gray-600 dark:text-gray-400">
             I build products that delight customer
           </p>
+          <button onClick={switchDark} className=" absolute top-4 right-4">
+            DARK
+          </button>
         </header>
         <main className="  flex-grow flex flex-col md:flex-row">
           <div className="w-full md:w-7/12 p-4">
             <section>
-              <h2 className="text-lg font-semibold text-gray-500">
+              <h2 className="text-lg font-semibold text-gray-500 dark:text-gray-400">
                 Experience
               </h2>
               <div className=" space-y-6 mt-2">
@@ -86,87 +94,66 @@ Learned Nodejs and Reactjs
           </div>
           <div className="w-full md:w-4/12  px-4 space-y-6 md:border-l">
             <section className="mt-2">
-              <h2 className="text-lg font-semibold text-gray-500">
+              <h2 className="text-lg font-semibold text-gray-500 dark:text-gray-400">
                 Technologies
               </h2>
               <div className=" space-y-3 mt-2">
-                <div>
-                  <h3 className="text-sm font-bold">Langauges</h3>
-                  <div className="flex text-xs space-x-3">
-                    <span>Javascript</span>
-                    <span>Typescript</span>
-                    <span>Go</span>
-                    <span>Bash</span>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-sm font-bold">Frontend</h3>
-                  <div className="flex text-xs space-x-3">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>React</span>
-                    <span>Angular</span>
-                    <span>Angular.js</span>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-sm font-bold">Backend</h3>
-                  <div className="flex text-xs space-x-3">
-                    <span>Node</span>
-                    <span>MySQL</span>
-                    <span>Postgres</span>
+                <Skils
+                  title="Langauges"
+                  items={["Javascript", "Typescript", "Go", "Bash"]}
+                />
 
-                    <span>Redis</span>
-                    <span>ReST</span>
-                    <span>GraphQL</span>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-sm font-bold">Frameworks</h3>
-                  <div className="flex text-xs space-x-3">
-                    <span>Express</span>
-                    <span>Next.js</span>
-                    <span>Remix</span>
-                  </div>
-                </div>
+                <Skils
+                  title="Frontend"
+                  items={[
+                    "HTML",
+                    "CSS",
+                    "React",
+                    "Bash",
+                    "Angular",
+                    "Angular.js",
+                  ]}
+                />
+                <Skils
+                  title="Frontend"
+                  items={[
+                    "Node",
+                    "MySQL",
+                    "Postgres",
+                    "Redis",
+                    "ReST",
+                    "GraphQL",
+                  ]}
+                />
+
+                <Skils
+                  title="Frameworks"
+                  items={["Express", "Next.js", "Remix"]}
+                />
               </div>
             </section>
             <section>
-              <h2 className="text-lg font-semibold text-gray-500">Education</h2>
+              <h2 className="text-lg font-semibold text-gray-500 dark:text-gray-400">
+                Education
+              </h2>
               <div className=" space-y-6 mt-2">
-                <div>
-                  <h3 className="text-sm font-bold">
-                    Bachelor of Computer Application
-                  </h3>
-                  <div className=" text-gray-600  ">
-                    <p className="text-sm">
-                      Ajk College of Arts and Science , Coimbatore
-                    </p>
-                    <p className="text-sm">2009 - 2012</p>
-                  </div>
-                </div>
+                <Education
+                  title="Bachelor of Computer Application"
+                  description=" Ajk College of Arts and Science , Coimbatore"
+                  year="2009 - 2012"
+                />
+                <Education
+                  title="Wesbos LearnNode Program"
+                  description="Reference ID: #5a16bcaf46721c3f51ddc73a"
+                  year="2017"
+                />
 
-                <div>
-                  <h3 className="text-sm font-bold">
-                    Wesbos LearnNode Program
-                  </h3>
-                  <div className=" text-gray-600  ">
-                    <p className="text-sm">
-                      Reference ID: #5a16bcaf46721c3f51ddc73a
-                    </p>
-                    <p className="text-sm">2017</p>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-sm font-bold">
-                    Udemy Build Responsive Real World Websites with HTML5 and
-                    CSS3
-                  </h3>
-                  <div className=" text-gray-600  ">
-                    <p className="text-sm">Certificate No:UC-YG33KUCD</p>
-                    <p className="text-sm">2017</p>
-                  </div>
-                </div>
+                <Education
+                  title=" Udemy Build Responsive Real World Websites with HTML5 and
+                  CSS3"
+                  description="Certificate No:UC-YG33KUCD"
+                  year="2017"
+                />
               </div>
             </section>
           </div>
