@@ -1,0 +1,36 @@
+{
+  "name": "saratonite-resume",
+  "version": "4.0.0",
+  "description": "Sarath's ⚡️ Resume 🔥",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./src/index.html --open",
+    "build": "parcel build ./src/index.html --public-url ./",
+    "export": "npm run build && node ./scripts/pdfexporter.js",
+    "publish": "npm run build && node ./scripts/publish-github-page.js",
+    "linux:fix-watch-issue": "sudo sysctl fs.inotify.max_user_watches=524288"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saratonite/resume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saratonite/resume/issues"
+  },
+  "homepage": "https://github.com/saratonite/resume#readme",
+  "dependencies": {
+    "puppeteer": "^1.19.0",
+    "spectre.css": "^0.5.8"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "gh-pages": "^2.0.1",
+    "node-sass": "^7.0.0",
+    "parcel-bundler": "^1.12.3"
+  }
+}
