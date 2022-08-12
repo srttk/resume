@@ -12,7 +12,7 @@ export default function Education({
 }: props) {
   return (
     <div>
-      <h3 className="text-sm font-bold">{title}</h3>
+      <h3 className="text-sm font-bold ">{title}</h3>
       <div className=" text-gray-600 dark:text-gray-400  ">
         <p className="text-sm">{description}</p>
         <p className="text-sm">{year}</p>

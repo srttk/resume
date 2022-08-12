@@ -5,7 +5,7 @@ type props = {
   jobTitle?: string;
   from?: string;
   to?: string;
-  description?: string;
+  description?: string | React.ReactNode;
 };
 
 export default function Experience({
