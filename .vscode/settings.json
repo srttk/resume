@@ -1,0 +1,6 @@
+{
+    "explorer.incrementalNaming": "smart",
+    "tailwindCSS.experimental.classRegex": [
+        ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+      ]
+}

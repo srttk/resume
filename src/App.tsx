@@ -1,5 +1,4 @@
 import React from "react";
-import ColorModeSwitch from "./components/ColorModeSwitch";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Skils from "./components/Skils";
@@ -12,14 +11,15 @@ export default function App() {
       }}
       className=" relative bg-no-repeat bg-center bg-cover  overflow-x-hidden   bg-gradient-to-r from-indigo-900  to-purple-700 min-h-screen py-6 px-2 flex flex-col text-gray-700 dark:text-gray-300"
     >
-      <div className="w-full max-w-screen-lg bg-white dark:bg-slate-900 mx-auto h-full  flex flex-col flex-grow rounded-lg shadow-sm  bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-75 dark:bg-opacity-80 border border-gray-100">
-        <header className="px-4 py-2  border-b relative">
+      <div className="w-full max-w-screen-lg bg-white dark:bg-slate-900 mx-auto h-full  flex flex-col flex-grow rounded-lg shadow-sm  bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-75 dark:bg-opacity-80 border border-gray-100 shadow-xl">
+        <header className="px-4 py-2  border-b relative space-y-2">
           <h1 className="text-2xl font-bold uppercase  ">Sarath TK</h1>
-          <div className="space-y-1">
-            <p className=" font-semibold">Fullstack Developer</p>
-            <p className="text-base text-gray-600 dark:text-gray-400">
-              I build products that delight customer
+          <div className="space-y-3">
+            <p className=" font-semibold">
+              Fullstack Developer, Building polished software and web
+              experiences. Crafting interfaces.
             </p>
+
             <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-4 text-xs font-medium">
               <a href="mailto:sarath.tk@icloud.com" className="flex gap-1">
                 <span className="flex">
@@ -77,7 +77,6 @@ export default function App() {
               </a>
             </div>
           </div>
-          <ColorModeSwitch />
         </header>
         <main className="  flex-grow flex flex-col md:flex-row">
           <div className="w-full md:w-7/12 p-4">
@@ -88,26 +87,34 @@ export default function App() {
               <div className=" space-y-6 mt-2">
                 <Experience
                   organization="Cordiant Technologies"
+                  website="https://cordiant.com/"
                   from="Feb 2020"
-                  jobTitle="Senior Software Developer"
+                  to="Sep 2022"
+                  jobTitle="Fullstack Developer"
                   description={
-                    <div>
+                    <div className=" space-y-2">
                       <p>
                         As FullStack Javascript Developer for Travel Related
                         Products <a href="https://cord.travel">Cord.Travel</a>{" "}
                         and{" "}
                         <a href="https://myportal.travel">myportal.travel</a>
                       </p>
+
                       <p>
-                        Architecture and development of{" "}
+                        Led Development of backend, website, web app, and Super
+                        admin app for{" "}
                         <a href="https://myportal.travel">myportal.travel</a>{" "}
-                        from scratch
+                      </p>
+                      <p>
+                        Led Development of Hotel Site builder app, a part of
+                        Cord.Travel Solution
                       </p>
                     </div>
                   }
                 />
                 <Experience
                   organization="eGlobe IT Solutions"
+                  website="https://www.eglobeits.com/"
                   from="Dec 2018"
                   to="Apr 2019"
                   jobTitle="Senior Software Developer"
@@ -117,17 +124,30 @@ export default function App() {
                 />
                 <Experience
                   organization="Notetech Software"
+                  website="https://www.notetech.com/"
                   from="Mar 2016"
                   to="Aug 2018"
                   jobTitle="Senior Software Developer"
-                  description={`
-                  As Javascript Developer for the client MMIT and iEnterprise. Expertised Angular (Formerly Angular2), Webpack, React, VSO
-
-Learned Nodejs and Reactjs
-                  `}
+                  description={
+                    <div className=" space-y-2">
+                      <p>
+                        As Javascript Developer for the client MMIT and
+                        iEnterprise.
+                      </p>
+                      <p>
+                        successfully completed the development of the different
+                        application such as MMIT PAR, MMIT Tracker, MMIT
+                        FormWriter, MMIT User Admin, and MMIT Scrape Admin
+                        applications which utilize Angular 2+, Web API 2, Auth0,
+                        PrimeNG, Angular Material, React, Node.js
+                      </p>
+                      <p>Expertised Angular, React,and Nodejs </p>
+                    </div>
+                  }
                 />
                 <Experience
                   organization="Ecodons / MooVooZ"
+                  website="https://www.ecodons.com/"
                   from="Nov 2014"
                   to="Nov 2015"
                   jobTitle="Software Developer"
@@ -138,6 +158,7 @@ Learned Nodejs and Reactjs
                 />
                 <Experience
                   organization="Cyberlegenz"
+                  website="https://cyberlegendz.com/"
                   from="Mar 2013"
                   to="Aug 2014"
                   jobTitle="Web Developer"
@@ -147,6 +168,7 @@ Learned Nodejs and Reactjs
                 />
                 <Experience
                   organization="Programmers International"
+                  website="https://www.programersglobal.com/"
                   from="Nov 2012"
                   to="Mar 2013"
                   jobTitle="Web Developer"
@@ -165,7 +187,7 @@ Learned Nodejs and Reactjs
               <div className=" space-y-3 mt-2">
                 <Skils
                   title="Langauges"
-                  items={["Javascript", "Typescript", "Go", "Bash"]}
+                  items={["Javascript", "Typescript", "Go", "Bash", "SQL"]}
                 />
 
                 <Skils
@@ -174,9 +196,9 @@ Learned Nodejs and Reactjs
                     "HTML",
                     "CSS",
                     "React",
-                    "Bash",
                     "Angular",
                     "Angular.js",
+                    "Tailwind.css",
                   ]}
                 />
                 <Skils
