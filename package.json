@@ -9,7 +9,7 @@
         "build": "tsc && vite build",
         "preview": "vite preview",
         "export": "npm run build && node ./scripts/pdfexporter.js",
-        "publish": "npm run build && node ./scripts/publish-github-page.js",
+        "pub": "npm run build && node ./scripts/publish-github-page.js",
         "linux:fix-watch-issue": "sudo sysctl fs.inotify.max_user_watches=524288"
     },
     "repository": {
