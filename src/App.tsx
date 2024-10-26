@@ -6,10 +6,8 @@ import Skils from "./components/Skils";
 export default function App() {
   return (
     <div
-      style={{
-        backgroundImage: "url('bg.svg')",
-      }}
-      className=" relative bg-no-repeat bg-center bg-cover  overflow-x-hidden   bg-gradient-to-r from-indigo-900  to-purple-700 min-h-screen py-6 px-2 flex flex-col text-gray-700 dark:text-gray-300"
+    
+      className=" relative bg-no-repeat bg-center bg-cover  overflow-x-hidden  bg-yellow-200 dark:bg-gray-800   min-h-screen py-6 px-2 flex flex-col text-gray-700 dark:text-gray-300"
     >
       <div className="w-full max-w-screen-lg bg-white dark:bg-slate-900 mx-auto h-full  flex flex-col flex-grow rounded-lg  bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-75 dark:bg-opacity-80 border border-gray-100 shadow-xl print:shadow-none print:border-none">
         <header className="px-4 py-2  border-b relative space-y-2">
@@ -85,6 +83,25 @@ export default function App() {
                 Experience
               </h2>
               <div className=" space-y-6 mt-2">
+              <Experience
+                  organization="ACMO.COM.AU"
+                  website="https://acmo.com.au"
+                  from="Nav 2022"
+                  to="May 2024"
+                  jobTitle="Fullstack Developer"
+                  description={
+                    <div className=" space-y-2">
+
+                      <p>
+                      Building flagship price tracking product <a href="https://fetchie.app" target="_blank">Fetchie</a> and <a href="https://www.acmo.com.au/solutions/accounts-payable-automation" target="_blank">
+                        All-in-one Business
+                      Automation Suite (formerly Accounts Payable Automation)
+                        </a>
+                      </p>
+                     
+                    </div>
+                  }
+                />
                 <Experience
                   organization="Cordiant Technologies"
                   website="https://cordiant.com/"
@@ -95,15 +112,15 @@ export default function App() {
                     <div className=" space-y-2">
                       <p>
                         As FullStack Javascript Developer for Travel Related
-                        Products <a href="https://cord.travel">Cord.Travel</a>{" "}
+                        Products <a href="https://cord.travel" target="_blank">Cord.Travel</a>{" "}
                         and{" "}
-                        <a href="https://myportal.travel">myportal.travel</a>
+                        <a href="https://myportal.travel" target="_blank">myportal.travel</a>
                       </p>
 
                       <p>
                         Led Development of backend, website, web app, and Super
                         admin app for{" "}
-                        <a href="https://myportal.travel">myportal.travel</a>{" "}
+                        <a href="https://myportal.travel" target="_blank">myportal.travel</a>{" "}
                       </p>
                       <p>
                         Led Development of Hotel Site builder app, a part of
@@ -199,6 +216,7 @@ export default function App() {
                     "Angular",
                     "Angular.js",
                     "Tailwind.css",
+                    "Svelt"
                   ]}
                 />
                 <Skils
@@ -211,12 +229,13 @@ export default function App() {
                     "ReST",
                     "GraphQL",
                     "MongoDB",
+                    "DynamoDB"
                   ]}
                 />
 
                 <Skils
                   title="Frameworks"
-                  items={["Express", "Next.js", "Remix"]}
+                  items={["Express", "Next.js", "Remix","Fastify", "SveltKit","Hono"]}
                 />
               </div>
             </section>

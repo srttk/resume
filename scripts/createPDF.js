@@ -1,7 +1,7 @@
 "use strict";
 
 /* global location */
-const puppeteer = require("puppeteer");
+import * as puppeteer from "puppeteer";
 
 const formatURL = function formatURL(host, print) {
   let u = host;
@@ -25,7 +25,7 @@ const formatURL = function formatURL(host, print) {
  * @param {Number}  opts.delay  wait in MS for resources to load
  * @returns {Promise}           promise indicating finished state
  */
-module.exports = function createPDF(opts) {
+export async  function createPDF(opts) {
   opts = opts || {};
   const url = opts.url;
   const print = !!opts.print;
