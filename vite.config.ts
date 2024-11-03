@@ -6,6 +6,6 @@ export default defineConfig(({ command, mode }) => {
   const isDev = mode === "development";
   return {
     plugins: [react()],
-    base: isDev ? "" : "https://saratonite.github.io/resume",
+    base: isDev ? "" : "https://srttk.github.io/resume",
   };
 });

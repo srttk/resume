@@ -1,7 +1,7 @@
 ⚡️ Sarath's Resume 
 =================
 
-My Online Resume [View](http://saratonite.github.io/resume) 
+My Online Resume [View](http://srttk.github.io/resume) 
 
 #### Thanks to [Github](http://github.com)
 

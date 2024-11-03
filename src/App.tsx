@@ -38,7 +38,7 @@ export default function App() {
                 </span>
                 sarath.tk@icloud.com
               </a>
-              <a href="https://saratonite.github.io" className="flex gap-1">
+              <a href="https://srttk.github.io" className="flex gap-1">
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -55,9 +55,9 @@ export default function App() {
                     />
                   </svg>
                 </span>
-                https://saratonite.github.io
+                https://srttk.github.io
               </a>
-              <a href="https://github.com/saratonite" className="flex gap-1">
+              <a href="https://github.com/srttk" className="flex gap-1">
                 <span>
                   <svg
                     fill="currentColor"
@@ -71,7 +71,7 @@ export default function App() {
                     ></path>
                   </svg>
                 </span>
-                https://github.com/saratonite
+                https://github.com/srttk
               </a>
             </div>
           </div>

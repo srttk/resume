@@ -1,5 +1,5 @@
 {
-    "name": "saratonite-resume",
+    "name": "@srttk/resume",
     "version": "4.0.0",
     "description": "Sarath's ⚡️ Resume 🔥",
     "type": "module",
@@ -14,15 +14,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/saratonite/resume.git"
+        "url": "git+https://github.com/srttk/resume.git"
     },
     "keywords": [],
     "author": "Sarath TK <sarath.tk@icloud.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/saratonite/resume/issues"
+        "url": "https://github.com/srttk/resume/issues"
     },
-    "homepage": "https://github.com/saratonite/resume#readme",
+    "homepage": "https://github.com/srttk/resume#readme",
     "dependencies": {
         "gh-pages": "^4.0.0",
         "react": "^18.2.0",

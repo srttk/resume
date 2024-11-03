@@ -5,7 +5,7 @@ const distDir = path.resolve(".");
 
 const options = {
   url: `file://${distDir}/dist/index.html`,
-  //url: 'http://saratonite.github.io/resume/',
+  //url: 'http://srttk.github.io/resume/',
   print: true,
   output: "sarath-tk-resume.pdf",
 };
