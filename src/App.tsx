@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div
     
-      className=" relative bg-no-repeat bg-center bg-cover  overflow-x-hidden  bg-yellow-200 dark:bg-gray-800   min-h-screen py-6 px-2 flex flex-col text-gray-700 dark:text-gray-300"
+      className=" relative bg-no-repeat bg-center bg-cover  overflow-x-hidden  bg-yellow-200 dark:bg-gray-800   min-h-screen py-6 px-2 flex flex-col text-slate-700 dark:text-gray-300"
     >
       <div className="w-full max-w-screen-lg bg-white dark:bg-slate-900 mx-auto h-full  flex flex-col flex-grow rounded-lg  bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-75 dark:bg-opacity-80 border border-gray-100 shadow-xl print:shadow-none print:border-none">
         <header className="px-4 py-2  border-b relative space-y-2">
@@ -216,7 +216,7 @@ export default function App() {
                     "Angular",
                     "Angular.js",
                     "Tailwind.css",
-                    "Svelt"
+                    "Svelte"
                   ]}
                 />
                 <Skils
@@ -235,7 +235,7 @@ export default function App() {
 
                 <Skils
                   title="Frameworks"
-                  items={["Express", "Next.js", "Remix","Fastify", "SveltKit","Hono"]}
+                  items={["Express", "Next.js", "Remix","Fastify", "SvelteKit","Hono"]}
                 />
               </div>
             </section>
